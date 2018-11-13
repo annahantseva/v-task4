@@ -1,23 +1,17 @@
-body {
-    width: 100%;
-}
+@import "reset.css";
+@import "fonts.css";
 
 .content-wrapper {
-    height: 768px;
     display: flex;
     justify-content: center;
-}
-
-header {
-    background-image: url("../images/bg-line.png");
-    background-repeat: no-repeat;
-    background-position: center top;
+    width: 1366px;
+    height: 768px;
+    background: url("../images/bg-line.png") no-repeat center top;
 }
 
 .main-title {
-    padding: 30px;
+    padding: 23px;
     font: 300 54px 'Segoe';
-    text-align: center;
 }
 
 .grid-items-container {
@@ -29,15 +23,24 @@ img {
     padding: 3px;
 }
 
-.item1, .item2, .item3, .item4 {
+.item1,
+.item2,
+.item3,
+.item4 {
     grid-row: 1;
 }
 
-.item5, .item6, .item7, .item8 {
+.item5,
+.item6,
+.item7,
+.item8 {
     grid-row: 2;
 }
 
-.item9, .item10, .item11, .item12 {
+.item9,
+.item10,
+.item11,
+.item12 {
     grid-row: 3;
 }
 
@@ -90,10 +93,10 @@ img {
 }
 
 .grid-items-container a {
-    padding: 15px;
-    display: block;
     position: relative;
     bottom: 55px;
+    display: block;
+    padding: 15px;
     font: 300 22px 'Segoe';
     color: #010101;
     background: rgba(255, 252, 252, .75);
@@ -104,10 +107,12 @@ img {
 /* T-shirts page */
 
 .t-shirts-wrapper {
-    height: 768px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    width: 1366px;
+    height: 768px;
+    background: url("../images/bg-line.png") no-repeat center top;
 }
 
 .t-shirt-items-container {
@@ -117,15 +122,15 @@ img {
 
 .t-shirt-items-container a {
     position: absolute;
-    left: 30px;
     top: 25px;
+    left: 30px;
 }
 
 .t-shirt-items-container p {
-    padding: 15px;
-    display: block;
     position: relative;
     bottom: 55px;
+    display: block;
+    padding: 15px;
     font: 300 22px 'Segoe';
     color: #010101;
     background: rgba(255, 252, 252, .75);
@@ -133,18 +138,25 @@ img {
 }
 
 .basket {
-    position: absolute;
+    position: absolute;    
     top: 25px;
     right: 40px;
+    display: flex;
+    justify-content: space-between;
     width: 250px;
     padding: 10px;
     background: #f26632;
 }
 
+.basket span {
+    font: 300 26px 'Segoe';
+    color: #fff;
+}
+
 .t-shirt-title {
     position: absolute;
-    left: 100px;
     top: 10px;
+    left: 100px;
     font: 300 56px 'Segoe';
 }
 
@@ -174,22 +186,22 @@ img {
 }
 
 .selection-block {
+    position: relative;
+    top: 100%;
     display: flex;
     justify-content: space-between;
     width: 90%;
     height: 50px;
-    position: relative;
-    top: 100%;
     padding: 15px;
-    background: #4ea686;
     color: #fff;
+    background: #4ea686;
     text-decoration: none;
 }
 
 .selection-block input {
     padding: 10px 15px;
     font-size: 25px;
-    border: 3px solid #fff;
     color: #fff;
     background: transparent;
+    border: 3px solid #fff;
 }
