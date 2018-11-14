@@ -3,20 +3,35 @@
 
 .content-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 1366px;
     height: 768px;
     background: url("../images/bg-line.png") no-repeat center top;
 }
 
+.main-page {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.cart-page {
+    width: 100%;
+    /* height: 100%; */
+}
+
 .main-title {
-    padding: 23px;
+    position: absolute;
+    top: 20px;
+    padding-left: 30px;
     font: 300 54px 'Segoe';
 }
 
 .grid-items-container {
     display: grid;
     grid-auto-rows: 190px;
+    padding: 30px;
+    margin-top: 15px;
 }
 
 img {
@@ -138,7 +153,7 @@ img {
 }
 
 .basket {
-    position: absolute;    
+    position: absolute;
     top: 25px;
     right: 40px;
     display: flex;
@@ -153,7 +168,7 @@ img {
     color: #fff;
 }
 
-.t-shirt-title {
+.title {
     position: absolute;
     top: 20px;
     left: 100px;
@@ -205,3 +220,110 @@ img {
     background: transparent;
     border: 3px solid #fff;
 }
+
+/* cart page */
+
+.cart-wrapper {
+    width: 1366px;
+    height: 768px;
+    background: url("../images/bg-line.png") no-repeat center top;
+}
+
+.back img {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.shop-list {
+    width: 35%;
+    padding: 8%;
+    font: 300 16px 'Segoe';
+}
+
+.titles {
+    font: 300 20px 'Segoe';
+}
+
+.shop-list div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.fa-trash-alt{
+    padding: 4px;
+    width: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.shop-list div:nth-child(2n+1) {
+    background: #d9644a;
+}
+
+.shop-list div:nth-child(2n) {
+    background: #bf613f;
+}
+
+.shop-list div:nth-child(8) {
+    background: #343e40;
+}
+
+.shop-list div:nth-child(9) {
+    background: #4ea686;
+}
+
+.shop-list-item span:first-of-type{
+    width: 180px;
+}
+.shop-list-item span:last-of-type{
+    width: 145px;
+    text-align: right;
+}
+
+.shop-list input {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.buttons-wrapper {
+    margin: 10px 0;
+}
+
+input.clear-all,
+input.continue,
+input.buy {
+    height: 30px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+input.clear-all {
+    width: 115px;
+}
+
+input.continue {
+    width: 150px;
+}
+
+input.buy {
+    width: 100px;
+}
+
+.shop-list span {
+    color: #fff;
+}
+
+.total-sum {
+    font: 300 20px 'Segoe';
+    color: #fff;
+}
+
+
+
