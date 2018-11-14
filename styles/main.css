@@ -2,17 +2,21 @@
 @import "fonts.css";
 
 .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 1366px;
     height: 768px;
     background: url("../images/bg-line.png") no-repeat center top;
 }
 
 .main-page {
+    position: relative;
     width: 100%;
-    /* height: 100%; */
+    height: 15%;
+}
+
+.store-page {
+    position: relative;
+    width: 100%;
+    height: 15%;
 }
 
 .cart-page {
@@ -31,11 +35,14 @@
     display: grid;
     grid-auto-rows: 190px;
     padding: 30px;
-    margin-top: 15px;
 }
 
 img {
     padding: 3px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .item1,
@@ -122,9 +129,6 @@ img {
 /* T-shirts page */
 
 .t-shirts-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     width: 1366px;
     height: 768px;
     background: url("../images/bg-line.png") no-repeat center top;
@@ -132,7 +136,7 @@ img {
 
 .t-shirt-items-container {
     display: grid;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .t-shirt-items-container a {
@@ -155,9 +159,7 @@ img {
 .basket {
     position: absolute;
     top: 25px;
-    right: 40px;
-    display: flex;
-    justify-content: space-between;
+    right: 30px;
     width: 250px;
     padding: 10px;
     background: #f26632;
@@ -221,6 +223,10 @@ img {
     border: 3px solid #fff;
 }
 
+.selection-block span {
+    font: 300 20px 'Segoe';
+}
+
 /* cart page */
 
 .cart-wrapper {
@@ -245,6 +251,10 @@ img {
     font: 300 20px 'Segoe';
 }
 
+.titles span:nth-child(2) {
+    width: 40px;
+}
+
 .shop-list div {
     display: flex;
     justify-content: space-between;
@@ -253,8 +263,9 @@ img {
 
 .fa-trash-alt{
     padding: 4px;
-    width: 10px;
+    width: 25px;
     color: #fff;
+    background: transparent;
     border: 1px solid #fff;
     cursor: pointer;
 }
